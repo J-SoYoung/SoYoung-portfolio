@@ -13,7 +13,9 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 ol, ul {
-	list-style: none;
+	/* list-style: none;
+	margin: 0;
+	padding: 0; */
 }
 a{
   text-decoration: none;
@@ -22,21 +24,20 @@ a:active, a:visited{
   color: inherit;
 }
 body{
-	max-width: 450px;
-	height: 100%;
-	margin: 0;
+	max-width: 1000px;
+	margin: 0 auto;
 	font-family: 'Orbit-Regular';
+	border: 1px solid lightgray;
 }
 h1,h2,h3,h4 { 
 	margin: 0; 
 	padding: 0;
-	letter-spacing: -3px;
-	font-family: 'SOYOMapleBoldTTF';
+	text-shadow: 1px 1px 2px gray;
 }
 h1 {
 	margin-bottom: 20px;
-	font-size: 32px;
-	color: #0E4F3D;
+	font-size: 36px;
+	color: #F97B22;
 }
 p{
 	margin: 0; 

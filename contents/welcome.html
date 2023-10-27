@@ -1,1 +1,236 @@
-<h1>welcome</h1>
+<link rel="stylesheet" href="/contents/_contents.css">
+<style>
+  /* header,footer, section, arrow */
+  header>nav,
+  footer {
+    width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid wihte;
+  }
+
+  section {
+    padding: 30px;
+    box-sizing: border;
+    text-align: center;
+  }
+
+  .arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  /* intro-section */
+  .intro {
+    background-color: #FFEBCD;
+  }
+
+  .intro>h2,
+  .intro>img,
+  .intro>p {
+    padding: 10px 0;
+  }
+
+  .intro .contact_list {
+    padding-top: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro .contact_list>a {
+    display: block;
+    width: 120px;
+    height: 50px;
+    margin: 0 10px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: white;
+    cursor: pointer;
+  }
+
+  .intro .contact_list>a:last-child {
+    padding-top: 12px;
+    font-weight: 700;
+  }
+
+  .intro .contact_list>a:hover {
+    box-shadow: 1px 1px 3px gray;
+  }
+
+  /* study-section */
+  .study {
+    background-color: #FBC252;
+  }
+
+  .study>h1,
+  .project>h1 {
+    color: white;
+  }
+
+  .study>p {
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px gray;
+    margin: -20px 0 15px 0;
+  }
+
+  .study .study_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .study .study_box>div {
+    width: 100%;
+    min-width: 300px;
+    height: 200px;
+    margin: 20px 8px;
+    padding: 16px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 8px;
+    text-align: left;
+  }
+
+  .study .study_box>div ul li:hover {
+    padding-left: 8px;
+    border-radius: 8px;
+    color: white;
+    background-color: #FBC252;
+  }
+
+  .project {
+    background-color: #F89C2E;
+  }
+
+  .project .projcet_box {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 16px;
+    padding: 16px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+
+  @media screen and (max-width: 600px) {
+    .intro h2 {
+      font-size: 20px;
+    }
+
+    .intro .contact_list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .intro .contact_list a {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .study .study_box {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+</style>
+
+<header>
+  <nav>
+    <span>Soyoung</span>
+    <div>
+      <span>Skill</span>
+      <span>Study</span>
+      <span>Project</span>
+    </div>
+  </nav>
+</header>
+
+<p class="arrow">
+  <svg width="40" height="40" viewBox="0 0 57 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <ellipse cx="28.5" cy="29" rx="28.5" ry="29" fill="#F97B22" />
+    <path
+      d="M30.7678 9.23223C29.7915 8.25592 28.2085 8.25592 27.2322 9.23223L11.3223 25.1421C10.346 26.1184 10.346 27.7014 11.3223 28.6777C12.2986 29.654 13.8816 29.654 14.8579 28.6777L29 14.5355L43.1421 28.6777C44.1184 29.654 45.7014 29.654 46.6777 28.6777C47.654 27.7014 47.654 26.1184 46.6777 25.1421L30.7678 9.23223ZM31.5 46L31.5 11L26.5 11L26.5 46L31.5 46Z"
+      fill="white" />
+  </svg>
+</p>
+
+<main>
+  <section class="intro">
+    <h2>성장을 기록하는 프론트엔드 개발자<br>정소영 포트폴리오입니다</h2>
+    <img src="/contents/images/profile.svg" width="250px" alt="profile-image" />
+    <p>공부하는 것을 취미로 삼을 만큼 배움에 대한 욕심이 크고<br>
+      자기주도적 학습능력을 가지고 있습니다. <br>
+      꼼꼼한 성격과 글쓰는 것을 좋아해 <br>
+      공부를 하고 꼭 글로 정리하는 습관을 가지고 있습니다.
+    </p>
+    <div class="contact_list">
+      <a href=""><img src="/contents/images/icon_github.svg" alt="github_icon" width="35px" /></a>
+      <a href=""><img src="/contents/images/icon_notion.svg" alt="notion_icon" width="35px" /></a>
+      <a href="">이력서 열람</a>
+    </div>
+  </section>
+
+  <section class="skill">
+    <h1>SKILL</h1>
+    <img src="/contents/images/icon_js.svg" alt="js_icon" width="60px" />
+    <img src="/contents/images/icon_ts.svg" alt="ts_icon" width="60px" />
+    <img src="/contents/images/icon_react.svg" alt="react_icon" width="60px" />
+    <img src="/contents/images/icon_next.svg" alt="next.js_icon" width="60px" />
+  </section>
+
+  <section class="study">
+    <h1>STUDY</h1>
+    <p>클릭하시면 관련 링크로 이동합니다</p>
+    <div class="study_box">
+      <div>
+        <h3>BOOK</h4>
+          <ul>
+            <li><a href="/">Deep Dive</a></li>
+            <li><a href="/">모던자바스크립트 입문</a></li>
+            <li><a href="/">Deep REACT</a></li>
+            <li><a href="/">Effective Typescript</a></li>
+          </ul>
+      </div>
+      <div>
+        <h3>Toy Project</h4>
+          <ul>
+            <li><a href="/">Javascript & React</a></li>
+            <li><a href="/">Next.js</a></li>
+            <li><a href="/">Progressive Web App</a></li>
+          </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="project">
+    <h1>PROJECT</h1>
+    <div class="projcet_box">
+      <h3>프로젝트 제목</h3>
+      <div></div>
+    </div>
+    <div class="projcet_box">
+      <h3>프로젝트 제목</h3>
+      <div></div>
+    </div>
+    <div class="projcet_box">
+      <h3>프로젝트 제목</h3>
+      <div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>2023.</span>
+  <span>soyoung's portfolio</span>
+</footer>
