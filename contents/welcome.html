@@ -85,13 +85,13 @@
 
   .study .study_box {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
   }
 
   .study .study_box>div {
-    width: 100%;
-    min-width: 300px;
+    width: 400px;
     height: 200px;
     margin: 20px 8px;
     padding: 16px;
@@ -141,6 +141,10 @@
     .study .study_box {
       display: flex;
       flex-direction: column;
+    }
+
+    .study .study_box>div {
+      width: 100%;
     }
   }
 </style>
@@ -194,21 +198,39 @@
     <p>클릭하시면 관련 링크로 이동합니다</p>
     <div class="study_box">
       <div>
-        <h3>BOOK</h4>
-          <ul>
-            <li><a href="/">Deep Dive</a></li>
-            <li><a href="/">모던자바스크립트 입문</a></li>
-            <li><a href="/">Deep REACT</a></li>
-            <li><a href="/">Effective Typescript</a></li>
-          </ul>
+        <h3>GITHUB</h3>
+        <ul>
+          <li><a href="/">Deep Dive</a></li>
+          <li><a href="/">모던자바스크립트 입문</a></li>
+          <li><a href="/">Deep REACT</a></li>
+          <li><a href="/">Effective Typescript</a></li>
+        </ul>
       </div>
       <div>
-        <h3>Toy Project</h4>
-          <ul>
-            <li><a href="/">Javascript & React</a></li>
-            <li><a href="/">Next.js</a></li>
-            <li><a href="/">Progressive Web App</a></li>
-          </ul>
+        <h3>Notion BLOG</h3>
+        <ul>
+          <li><a href="/">Deep Dive</a></li>
+          <li><a href="/">모던자바스크립트 입문</a></li>
+          <li><a href="/">Deep REACT</a></li>
+          <li><a href="/">Effective Typescript</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>BOOK</h3>
+        <ul>
+          <li><a href="/">Deep Dive</a></li>
+          <li><a href="/">모던자바스크립트 입문</a></li>
+          <li><a href="/">Deep REACT</a></li>
+          <li><a href="/">Effective Typescript</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Toy Project</h3>
+        <ul>
+          <li><a href="/">Javascript & React</a></li>
+          <li><a href="/">Next.js</a></li>
+          <li><a href="/">Progressive Web App</a></li>
+        </ul>
       </div>
     </div>
   </section>
