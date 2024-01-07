@@ -123,6 +123,17 @@
     text-align: left;
   }
 
+  .project_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .project_content>div>h2,
+  p {
+    margin-bottom: 16px;
+  }
+
   @media screen and (max-width: 600px) {
     .intro h2 {
       font-size: 20px;
@@ -171,11 +182,11 @@
 
 <main>
   <section class="intro">
-    <h2>성장하는 방법을 고민하는 개발자<br>정소영의 포트폴리오입니다</h2>
+    <h2>오늘도 성장하는 개발자<br>정소영의 포트폴리오입니다</h2>
     <img src="/contents/images/profile.svg" width="250px" alt="profile-image" />
-    <p>공부하는 것을 취미로 삼을 만큼 배움에 대한 욕심이 크고<br>
-      자기주도적 학습능력을 가지고 있습니다. <br>
-      숲을 보는 공부 습관을 가지려고 글로 정리하는 습관을 가지고 있습니다.
+    <p>
+      배우고 싶은 것이 너무 많아 개발공부 하는 것이 취미가 되었습니다.<br>
+      그만큼 배움에 대한 욕심이 크고<br> 자기 주도적 학습능력이 뛰어납니다.
     </p>
     <div class="contact_list">
       <a href=""><img src="/contents/images/icon_github.svg" alt="github_icon" width="35px" /></a>
@@ -193,7 +204,7 @@
   </section>
 
   <section class="study">
-    <h1>STUDY</h1>
+    <h1 id="title">STUDY</h1>
     <p>클릭하시면 관련 링크로 이동합니다</p>
     <div class="study_box">
       <div>
@@ -220,26 +231,45 @@
   </section>
 
   <section class="project">
-    <h1>PROJECT</h1>
+    <h1 id="title">PROJECT</h1>
     <div class="projcet_box">
-      <h3>millie-Book clone-coding</h3>
-      <div>
-        <a href="https://github.com/thdud2262/millieBook_PJ">github 이동하기</a>
-        <p>HTML, CSS, JavaScript, bootstrap을 사용하여 클론 코딩을 진행</p>
+      <div class="project_content">
+        <div>
+          <h2 id="sub_title">millie-Book clone-coding</h2>
+          <p><a href="https://github.com/thdud2262/millieBook_PJ"> - github 이동하기</a></p>
+          <p><a href="https://millie-kappa.vercel.app/">- 배포 링크 이동하기</a></p>
+          <p>HTML, CSS, JavaScript, bootstrap을 사용하여 클론 코딩을 진행하였습니다.</p>
+        </div>
+        <img src="/contents/images/pj1.png" width="250px" height="250px" />
       </div>
     </div>
+
     <div class="projcet_box">
-      <h3>Toonda</h3>
-      <a href="https://github.com/thdud2262/ReToonda-next-diary-toyproject">github 이동하기</a>
-      <p><a href="https://re-toonda.vercel.app/">Toonda 배포 링크 이동하기 </a></p>
-      <div>Next.js를 공부하며 만든 다이어리 서비스입니다</div>
+      <div class="project_content">
+        <div>
+          <h2 id="sub_title">Toonda</h2>
+          <p><a href="https://github.com/thdud2262/ReToonda-next-diary-toyproject">- github 이동하기</a></p>
+          <p><a href="https://re-toonda.vercel.app/">- Toonda 배포 링크 이동하기 </a></p>
+          <p>Next.js를 공부하며 만든 다이어리 서비스입니다</p>
+        </div>
+        <img src="/contents/images/pj2.png" height="250px" />
+      </div>
     </div>
+
     <div class="projcet_box">
-      <h3>culture-friend</h3>
-      <a href="https://github.com/thdud2262/culture-project-next?tab=readme-ov-file">github 이동하기</a>
-      <p><a href="https://culture-me.vercel.app/">culture-friend 배포 링크 이동하기 </a></p>
-      <div>공공API를 활용하여 공연정보를 알려주는 서비스입니다. </div>
+      <div class="project_content">
+        <div>
+          <h2 id="sub_title">culture-friend</h2>
+          <p><a href="https://github.com/thdud2262/culture-project-next?tab=readme-ov-file">- github 이동하기</a></p>
+          <p><a href="https://culture-me.vercel.app/">- culture-friend 배포 링크 이동하기 </a></p>
+          <p>공공API를 활용하여 공연정보를 알려주는 서비스입니다. <br>
+            [오늘의 공연] 탭을 누르면 list, grid, calendar의<br>
+            다양한 형식으로 공연정보를 볼 수 있습니다.</p>
+        </div>
+        <img src="/contents/images/pj3.png" height="250px" />
+      </div>
     </div>
+
   </section>
 </main>
 
